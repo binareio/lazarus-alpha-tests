@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dtgm4mocr
+  api_key: '937675854665996'
+  api_secret: sM_5iluwmdHeCiF1it-gdNz40jg
+  enhance_image_tag: true
+  static_file_support: true
+production:
+  cloud_name: dtgm4mocr
+  api_key: '937675854665996'
+  api_secret: sM_5iluwmdHeCiF1it-gdNz40jg
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dtgm4mocr
+  api_key: '937675854665996'
+  api_secret: sM_5iluwmdHeCiF1it-gdNz40jg
+  enhance_image_tag: true
+  static_file_support: false

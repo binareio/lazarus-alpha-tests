@@ -1,0 +1,72 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: erya-user
+  datasource:
+    hikari:
+      maximum-pool-size: 6
+      minimum-idle: 3
+  redis:
+    jedis:
+      pool:
+        min-idle: 1
+        max-idle: 20
+        max-active: 20
+    host: 39.96.54.89
+    password: YCH670989882@qq.com
+  task:
+    execution:
+      pool:
+        core-size: 6
+        queue-capacity: 200
+        max-size: 12
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  rabbitmq:
+    host: 134.175.99.101
+  shardingsphere:
+    datasource:
+      names: master,slave
+      master:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        password: YCH670989882@qq.com
+        jdbc-url: jdbc:mysql://39.102.33.135:3306/erya?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowPublicKeyRetrieval=true&serverTimezone=GMT%2B8
+      slave:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        password: YCH670989882@qq.com
+        jdbc-url: jdbc:mysql://39.96.54.89:3306/erya?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowPublicKeyRetrieval=true&serverTimezone=GMT%2B8
+    masterslave:
+      load-balance-algorithm-type: round_robin
+      master-data-source-name: master
+      slave-data-source-names: slave
+      name: ms
+    props:
+      sql:
+        show: false
+  main:
+    allow-bean-definition-overriding: true
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: user.pojo
+logging:
+  level:
+    root: info
+  path: /root/logs/erya
+eureka:
+  client:
+    service‐url:
+      defaultZone: http://39.102.33.135:8000/eureka
+  instance:
+    prefer‐ip‐address: true
+    ip-address: 39.96.54.89
