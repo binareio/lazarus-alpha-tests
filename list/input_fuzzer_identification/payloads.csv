@@ -1,0 +1,11 @@
+payloads
+https://domain_name/user_name/api_name/api_ver/pet/findByTags?tags=fuzzstring
+https://domain_name/user_name/api_name/api_ver/devices?limit=%C3%B3&=False&=&%10=%C2%89%F0%AE%8E%8D%17%2A&%10=%C2%B0%F3%9E%AA%89&K%F0%9F%B2%88_%C2%BF%25=%7B%27%5Cx9a%C3%A7%5CU000a2a78%C3%85%C3%BA%27%3A+%7B%7D%2C+%27%5CU0001e1b3%C3%B4%5CU00093433%27%3A+%5B%5B%27%5CU00031785%5Cx7f%C3%88M%C3%BB%21%5Cx96O%5Cx8a%5CU0009211bu%27%5D%2C+None%2C+None%5D%2C+%27%F0%A0%A4%82%5CU00030a06355%F0%A2%98%87%27%3A+%5BNone%5D%7D
+"https://domain_name/user_name/api_name/api_ver/temperature/asd/heater/1unionallselect1,2,3,4,5,6,namefromsysobjectswherextype='u'--"
+https://domain_name/user_name/api_name/api_ver/yldc/auth179d707d907d495a
+https://domain_name/user_name/api_name/api_ver/devices?skip=1&limit=1
+https://domain_name/user_name/api_name/api_ver/user/login?password=%5BFiltered%5D&username=%C3%8B
+https://domain_name/user_name/api_name/api_ver/lighting/dimmers/!@#$%%^#$%#$@#$%$$@#$%^^**(()/1/timer/1
+https://domain_name/user_name/api_name/api_ver/diagnostic/15a6eb96574d4089
+https://domain_name/user_name/api_name/api_ver/user/login?username=uCO4GhxHX4pakGl5Eir66VLdBuYLzd5DHIKHiM5p8&password=fuzzstring
+https://domain_name/user_name/api_name/api_ver/devices?skip=-285&limit=-285
